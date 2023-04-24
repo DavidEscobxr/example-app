@@ -10,33 +10,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Add book</h1>
-        <form action = "/create_book" method = "post" class="form-group">
+        <h1>Add user</h1>
+        <form action = "/create_user" method = "post" class="form-group">
             <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
             <div class="form-group">
-            <label for="exampleFormControlInput1">Book title</label>
-            <input class="form-control" name="name" placeholder="Book title">
+            <label for="exampleFormControlInput1">Name</label>
+            <input class="form-control" name="name" placeholder="Name">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput2">Author's name</label>
-                <input class="form-control" name="author" placeholder="Author's name">
+                <label for="exampleFormControlInput2">Surname</label>
+                <input class="form-control" name="surname" placeholder="Surname">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput3">Date realease</label>
-                <input type="date" class="form-control" name="release">
+                <label for="exampleFormControlInput3">Age</label>
+                <input type="number" class="form-control" name="age" placeholder="Age">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Edition number</label>
-                <input class="form-control" type="number" name="edition" placeholder="Edition number">
+                <label for="exampleFormControlInput1">Birth date</label>
+                <input type="date" class="form-control" type="number" name="birth_date">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput3">Gender</label>
-                <input class="form-control" name="gender" placeholder="Gender">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="example@email.com">
             </div>
             <div class="form-group">
-            <label for="exampleFormControlTextarea1">Book synopsis</label>
-            <textarea class="form-control" name="synopsis" rows="3"></textarea>
+                <label for="exampleFormControlInput1">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
             </div>
+
             <button type="submit" class="btn btn-primary">Add</button>
         </form>
     </div>

@@ -22,4 +22,10 @@ Route::get('/book', function () {
     return view('book_create');
 });
 
-Route::post('create','App\Http\Controllers\BookController@insert');
+Route::get('/user', function () {
+    return view('user_create');
+});
+
+Route::post('create_book','App\Http\Controllers\BookController@insert');
+
+Route::post('create_user','App\Http\Controllers\UserController@insert');

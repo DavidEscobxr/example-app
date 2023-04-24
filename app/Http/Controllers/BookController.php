@@ -17,7 +17,7 @@ class BookController extends BaseController
         $gender = $request->input('gender');
         $synopsis = $request->input('synopsis');
         $data = array('name'=>$name,"author"=>$author,"date_release"=>$release,"edition"=>$edition,
-                        'gender'=>$gender,"synopsis"=>$synopsis, "create_at"=> new DateTime('now'));
+                        'gender'=>$gender,"synopsis"=>$synopsis, "created_at"=> new DateTime('now'));
 
         DB::table('books')->insert($data);
 
