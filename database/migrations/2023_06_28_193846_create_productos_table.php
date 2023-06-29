@@ -17,9 +17,9 @@ class CreateProductosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->text('descripcion');
-            $table->int('precio');
-            $table->int('existencias');
-            $table->enum('proveedor', ['Amway', 'Johnson & Johnson', 'Colgate Palmolive']);            
+            $table->integer('precio');
+            $table->integer('existencias');
+            $table->enum('proveedor', ['Amway', 'Johnson & Johnson', 'Colgate Palmolive']);
             $table->timestamps();
         });
     }

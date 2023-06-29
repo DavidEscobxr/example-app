@@ -17,8 +17,8 @@ class ProductoFactory extends Factory
             'nombre' => $this->faker->word,
             'descripcion' => $this->faker->sentence,
             'precio' => $this->faker->randomNumber(),
-            'existencias' => $this->faker->randomNumberInt(),
-            'proveedor' => $this->faker->sentence(),
+            'existencias' => $this->faker->randomNumber(),
+            'proveedor' => $this->faker->randomElement(['Amway', 'Johnson & Johnson', 'Colgate Palmolive']),
         ];
     }
 }
